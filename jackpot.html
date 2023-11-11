@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <title>剪刀石頭布</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+                <div class="col-4">
+                    <p class="navbar-brand">猜拳機</p>
+                </div>
+                <div class="col-4"></div>
+                <div class="col-4 text-end">
+                    <button type="button" class="btn btn-outline-primary btn-lg navbar-togger ">
+                        <a class=" nav-link text-white" href="#">退出</a>
+                    </button>
+                </div>
+        </div>
+        </nav>
+
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 text-center">
+                <p>我</p>
+                <img src="../圖片/stone.png" alt="stone" id="imgUser">
+            </div>
+            <div class="col-4 text-center">
+                <div id="race">
+                    <p>結果:</p>
+                    <p id="result"></p>
+                    <p id="winTime"> 贏: 0</p>
+                    <p id="loseTime"> 輸: 0</p>
+                    <p id="tieTime"> 平手: 0</p>
+                </div>
+            </div>
+
+            <div class="col-4 text-center">
+                <p>對手</p>
+                <img src="../圖片/stone.png" alt="stone" id="imgEnemy">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <button class="col-4 text-center btn btn-dark" id="btn1" onclick="changeImg(0)">stone</button>
+            <button class="col-4 text-center btn btn-dark" id="btn2" onclick="changeImg(1)">scissor</button>
+            <button class="col-4 text-center btn btn-dark" id="btn3" onclick="changeImg(2)">paper</button>
+        </div>
+    </div>
+    <script src="./jackpot.js"></script>
+</body>
+
+</html>
