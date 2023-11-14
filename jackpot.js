@@ -1,8 +1,8 @@
 //將我們的照片存入陣列
 var imgs = [
-    "../圖片/stone.png",
-    "../圖片/scissor.png",
-    "../圖片/paper.png",
+    "./stone.png",
+    "./scissor.png",
+    "./paper.png",
 ];
 //初始化我們的值
 var user = 0;
